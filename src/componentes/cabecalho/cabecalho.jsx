@@ -1,5 +1,8 @@
+import './cabecalho.css'
+
+
 function Cabecalho() {
-    return <header> meu cabeçalho...</header>
+    return <header className='cabecalho_root'> meu cabeçalho...</header>
 }
 
 export default Cabecalho

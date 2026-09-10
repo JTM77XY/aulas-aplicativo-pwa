@@ -1,0 +1,4 @@
+.cabecalho_root{
+    background-color: red;
+    background-color: var(--cor-primaria);
+}
