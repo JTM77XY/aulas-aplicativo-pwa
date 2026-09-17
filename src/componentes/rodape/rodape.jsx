@@ -1,5 +1,11 @@
+import "./Rodape.css";
+
 function Rodape(){
-    return <footer>rodapé</footer>
+    const anoAtual = new Date().getFullYear();
+
+    return <footer className="Rodape_root">
+        <span>"Copyright © {anoAtual} - Todos os direitos reservados - seu-nome."</span>
+    </footer>
 }
 
 export default Rodape
