@@ -2,8 +2,21 @@ import "./Avatar.css"
 
 function Avatar(props){
     
-  const letra = props.nome[0];
-  return <div className="Avatar_root">{letra}</div>
+  const nomes = props.nome.split(" "); //divide o nome joão bilu em em array ['joão', 'bilu']
+
+  const primeiroNome = nomes[0]; // joão
+  const primeiraLetraPrimeiroNome = primeiroNome[0]; // 'j'
+
+  let primeiraLetraUltimoNome = ""; // vazio
+  if (nomes.length > 1) {
+    const ultimoNome = nomes[1] // bilu
+    primeiraLetraUltimoNome = ultimoNome[0]; // 'b'
+  }
+
+  return <div className="Avatar_root"> 
+        {primeiraLetraPrimeiroNome + primeiraLetraUltimoNome} 
+   </div>
+   // j + b
 }
 
 export default Avatar;

@@ -5,8 +5,8 @@ function Cabecalho() {
   return (
     <header className="cabecalho_root">
      
-      
-      <Avatar nome="joão" idade={30}/>
+    
+      <Avatar nome="joão bilu" idade={20}/>
     </header>
   );
 }
